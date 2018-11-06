@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+public delegate void EventHandler();
+
 namespace Jadwin_Lab5
 {
     class Robot
@@ -12,7 +14,7 @@ namespace Jadwin_Lab5
         private int x;
         private int y;
         private Direction dir;
-        
+        private event EventHandler _oob;
         private enum Direction
         {
             North = 0,
@@ -77,6 +79,8 @@ namespace Jadwin_Lab5
             }
             if (num > 100 || num < -100)
             {
+                _oob += new EventHandler(RaiseError);
+                _oob.Invoke();
                 return ogNum;
             }
             else
@@ -87,6 +91,10 @@ namespace Jadwin_Lab5
         public void dirChange(int num)
         {
             dir = (Direction) num;
+        }
+        private static void RaiseError()
+        {
+            MessageBox.Show("Cannot go out of bounds", "Out of bounds");
         }
     }
 }
