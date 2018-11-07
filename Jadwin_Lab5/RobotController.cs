@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Jadwin_Lab5
 {
-    public partial class Form1 : Form
+    public partial class RobotController : Form
     {
         int dir;
         Robot robot = new Robot();
 
-        public Form1()
+        public RobotController()
         {
             InitializeComponent();
             robot.X = 0;

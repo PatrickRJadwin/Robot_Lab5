@@ -14,7 +14,7 @@ namespace Jadwin_Lab5
         private int x;
         private int y;
         private Direction dir;
-        private event EventHandler _oob;
+        private event EventHandler _outOfBounds;
         private enum Direction
         {
             North = 0,
@@ -79,8 +79,8 @@ namespace Jadwin_Lab5
             }
             if (num > 100 || num < -100)
             {
-                _oob += new EventHandler(RaiseError);
-                _oob.Invoke();
+                _outOfBounds += new EventHandler(RaiseError);
+                _outOfBounds.Invoke();
                 return ogNum;
             }
             else

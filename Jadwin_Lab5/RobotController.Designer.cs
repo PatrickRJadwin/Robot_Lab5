@@ -1,6 +1,6 @@
 ﻿namespace Jadwin_Lab5
 {
-    partial class Form1
+    partial class RobotController
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rbtBox = new System.Windows.Forms.TextBox();
             this.coord = new System.Windows.Forms.Label();
             this.mv1 = new System.Windows.Forms.Button();
             this.north = new System.Windows.Forms.Button();
@@ -39,15 +39,15 @@
             this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // rbtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 30);
-            this.textBox1.MaxLength = 40000;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(200, 200);
-            this.textBox1.TabIndex = 0;
+            this.rbtBox.Location = new System.Drawing.Point(12, 30);
+            this.rbtBox.MaxLength = 40000;
+            this.rbtBox.Multiline = true;
+            this.rbtBox.Name = "rbtBox";
+            this.rbtBox.ReadOnly = true;
+            this.rbtBox.Size = new System.Drawing.Size(200, 200);
+            this.rbtBox.TabIndex = 0;
             // 
             // coord
             // 
@@ -127,7 +127,7 @@
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // RobotController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,8 +140,8 @@
             this.Controls.Add(this.north);
             this.Controls.Add(this.mv1);
             this.Controls.Add(this.coord);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.rbtBox);
+            this.Name = "RobotController";
             this.Text = "Robot";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,7 +150,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox rbtBox;
         private System.Windows.Forms.Label coord;
         private System.Windows.Forms.Button mv1;
         private System.Windows.Forms.Button north;

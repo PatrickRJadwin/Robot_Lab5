@@ -2,8 +2,8 @@ C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.e
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.exe
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.pdb
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.csprojResolveAssemblyReference.cache
-C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.Form1.resources
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.Properties.Resources.resources
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.csproj.GenerateResource.Cache
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.exe
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.pdb
+C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.RobotController.resources
