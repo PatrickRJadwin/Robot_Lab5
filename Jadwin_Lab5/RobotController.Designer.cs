@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rbtBox = new System.Windows.Forms.TextBox();
             this.coord = new System.Windows.Forms.Label();
             this.mv1 = new System.Windows.Forms.Button();
             this.north = new System.Windows.Forms.Button();
@@ -37,17 +36,8 @@
             this.south = new System.Windows.Forms.Button();
             this.mv10 = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
+            this.rbtPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // rbtBox
-            // 
-            this.rbtBox.Location = new System.Drawing.Point(12, 30);
-            this.rbtBox.MaxLength = 40000;
-            this.rbtBox.Multiline = true;
-            this.rbtBox.Name = "rbtBox";
-            this.rbtBox.ReadOnly = true;
-            this.rbtBox.Size = new System.Drawing.Size(200, 200);
-            this.rbtBox.TabIndex = 0;
             // 
             // coord
             // 
@@ -127,11 +117,20 @@
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
             // 
+            // rbtPanel
+            // 
+            this.rbtPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.rbtPanel.Location = new System.Drawing.Point(13, 27);
+            this.rbtPanel.Name = "rbtPanel";
+            this.rbtPanel.Size = new System.Drawing.Size(200, 200);
+            this.rbtPanel.TabIndex = 9;
+            // 
             // RobotController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(224, 367);
+            this.Controls.Add(this.rbtPanel);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.mv10);
             this.Controls.Add(this.south);
@@ -140,7 +139,6 @@
             this.Controls.Add(this.north);
             this.Controls.Add(this.mv1);
             this.Controls.Add(this.coord);
-            this.Controls.Add(this.rbtBox);
             this.Name = "RobotController";
             this.Text = "Robot";
             this.ResumeLayout(false);
@@ -149,8 +147,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox rbtBox;
         private System.Windows.Forms.Label coord;
         private System.Windows.Forms.Button mv1;
         private System.Windows.Forms.Button north;
@@ -159,6 +155,7 @@
         private System.Windows.Forms.Button south;
         private System.Windows.Forms.Button mv10;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Panel rbtPanel;
     }
 }
 

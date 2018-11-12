@@ -13,13 +13,23 @@ namespace Jadwin_Lab5
     public partial class RobotController : Form
     {
         int dir;
+        string arrow = Convert.ToChar(233).ToString();
         Robot robot = new Robot();
+        Label lbl = new Label();
 
         public RobotController()
         {
             InitializeComponent();
             robot.X = 0;
             robot.Y = 0;
+            fill();
+        }
+
+        private void fill()
+        {
+            lbl.Text = arrow;
+            rbtPanel.Container.Add(lbl);
+            lbl.Location = new Point(100, 100);
         }
 
         private void north_Click(object sender, EventArgs e)
