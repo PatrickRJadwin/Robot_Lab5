@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.rbtBox = new System.Windows.Forms.TextBox();
             this.coord = new System.Windows.Forms.Label();
             this.mv1 = new System.Windows.Forms.Button();
             this.north = new System.Windows.Forms.Button();
@@ -36,8 +37,17 @@
             this.south = new System.Windows.Forms.Button();
             this.mv10 = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
-            this.robotBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // rbtBox
+            // 
+            this.rbtBox.Location = new System.Drawing.Point(12, 30);
+            this.rbtBox.MaxLength = 40000;
+            this.rbtBox.Multiline = true;
+            this.rbtBox.Name = "rbtBox";
+            this.rbtBox.ReadOnly = true;
+            this.rbtBox.Size = new System.Drawing.Size(200, 200);
+            this.rbtBox.TabIndex = 0;
             // 
             // coord
             // 
@@ -50,9 +60,9 @@
             // 
             // mv1
             // 
-            this.mv1.Location = new System.Drawing.Point(19, 270);
+            this.mv1.Location = new System.Drawing.Point(28, 278);
             this.mv1.Name = "mv1";
-            this.mv1.Size = new System.Drawing.Size(41, 23);
+            this.mv1.Size = new System.Drawing.Size(42, 23);
             this.mv1.TabIndex = 2;
             this.mv1.Text = "Go 1";
             this.mv1.UseVisualStyleBackColor = true;
@@ -60,9 +70,9 @@
             // 
             // north
             // 
-            this.north.Location = new System.Drawing.Point(89, 241);
+            this.north.Location = new System.Drawing.Point(98, 249);
             this.north.Name = "north";
-            this.north.Size = new System.Drawing.Size(22, 23);
+            this.north.Size = new System.Drawing.Size(23, 23);
             this.north.TabIndex = 3;
             this.north.Text = "N";
             this.north.UseVisualStyleBackColor = true;
@@ -70,9 +80,9 @@
             // 
             // east
             // 
-            this.east.Location = new System.Drawing.Point(111, 270);
+            this.east.Location = new System.Drawing.Point(120, 278);
             this.east.Name = "east";
-            this.east.Size = new System.Drawing.Size(22, 23);
+            this.east.Size = new System.Drawing.Size(23, 23);
             this.east.TabIndex = 4;
             this.east.Text = "E";
             this.east.UseVisualStyleBackColor = true;
@@ -80,9 +90,9 @@
             // 
             // west
             // 
-            this.west.Location = new System.Drawing.Point(68, 270);
+            this.west.Location = new System.Drawing.Point(77, 278);
             this.west.Name = "west";
-            this.west.Size = new System.Drawing.Size(21, 23);
+            this.west.Size = new System.Drawing.Size(22, 23);
             this.west.TabIndex = 5;
             this.west.Text = "W";
             this.west.UseVisualStyleBackColor = true;
@@ -90,9 +100,9 @@
             // 
             // south
             // 
-            this.south.Location = new System.Drawing.Point(89, 299);
+            this.south.Location = new System.Drawing.Point(98, 307);
             this.south.Name = "south";
-            this.south.Size = new System.Drawing.Size(22, 23);
+            this.south.Size = new System.Drawing.Size(23, 23);
             this.south.TabIndex = 6;
             this.south.Text = "S";
             this.south.UseVisualStyleBackColor = true;
@@ -100,9 +110,9 @@
             // 
             // mv10
             // 
-            this.mv10.Location = new System.Drawing.Point(141, 270);
+            this.mv10.Location = new System.Drawing.Point(150, 278);
             this.mv10.Name = "mv10";
-            this.mv10.Size = new System.Drawing.Size(46, 23);
+            this.mv10.Size = new System.Drawing.Size(47, 23);
             this.mv10.TabIndex = 7;
             this.mv10.Text = "Go 10";
             this.mv10.UseVisualStyleBackColor = true;
@@ -110,28 +120,18 @@
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(156, 324);
+            this.exit.Location = new System.Drawing.Point(165, 332);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(46, 23);
+            this.exit.Size = new System.Drawing.Size(47, 23);
             this.exit.TabIndex = 8;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
-            // 
-            // robotBox
-            // 
-            this.robotBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.robotBox.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.robotBox.Location = new System.Drawing.Point(13, 26);
-            this.robotBox.Name = "robotBox";
-            this.robotBox.Size = new System.Drawing.Size(200, 200);
-            this.robotBox.TabIndex = 9;
             // 
             // RobotController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 355);
-            this.Controls.Add(this.robotBox);
+            this.ClientSize = new System.Drawing.Size(224, 367);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.mv10);
             this.Controls.Add(this.south);
@@ -140,6 +140,7 @@
             this.Controls.Add(this.north);
             this.Controls.Add(this.mv1);
             this.Controls.Add(this.coord);
+            this.Controls.Add(this.rbtBox);
             this.Name = "RobotController";
             this.Text = "Robot";
             this.ResumeLayout(false);
@@ -148,6 +149,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox rbtBox;
         private System.Windows.Forms.Label coord;
         private System.Windows.Forms.Button mv1;
         private System.Windows.Forms.Button north;
@@ -156,7 +159,6 @@
         private System.Windows.Forms.Button south;
         private System.Windows.Forms.Button mv10;
         private System.Windows.Forms.Button exit;
-        private System.Windows.Forms.Label robotBox;
     }
 }
 

@@ -7,12 +7,3 @@ C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.c
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.exe
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.pdb
 C:\Users\patrick\Documents\Stuff\Jadwin_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.RobotController.resources
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.exe.config
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.exe
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.pdb
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.exe
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\bin\Debug\Jadwin_Lab5.pdb
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.csprojResolveAssemblyReference.cache
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.RobotController.resources
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.Properties.Resources.resources
-D:\Fall2018\cSharp\Robot_Lab5\Jadwin_Lab5\obj\Debug\Jadwin_Lab5.csproj.GenerateResource.Cache
