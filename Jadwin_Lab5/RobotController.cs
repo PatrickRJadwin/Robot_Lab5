@@ -97,5 +97,11 @@ namespace Jadwin_Lab5
             robot.rbtMove(10, visX, visY, lbl, rbtPanel);
             coord.Text = "{X=" + robot.X + ", Y=" + robot.Y + "}";
         }
+
+        // Exit
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
