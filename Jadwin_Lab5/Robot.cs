@@ -75,8 +75,10 @@ namespace Jadwin_Lab5
             switch (dir)
             {
                 case Direction.North:
+                    // Temporary value for original x val
                     temp = x;
                     x = incCheck(x, incAmount, true);
+                    // Temporary value for new x val
                     temp2 = x;
                     break;
                 case Direction.South:
@@ -85,8 +87,10 @@ namespace Jadwin_Lab5
                     temp2 = x;
                     break;
                 case Direction.East:
+                    // Temporary value for original y val
                     temp = y;
                     y = incCheck(y, incAmount, true);
+                    // Temporary value for new y val
                     temp2 = x;
                     break;
                 case Direction.West:
@@ -100,7 +104,9 @@ namespace Jadwin_Lab5
         // Check if able to increment or out of bounds
         public int incCheck(int num, int incAmount, bool op)
         {
+            // Store original number
             int ogNum = num;
+            // Increment
             if (op == true)
             {
                 num += incAmount;
@@ -109,12 +115,15 @@ namespace Jadwin_Lab5
             {
                 num -= incAmount;
             }
+            // Check if new num will exceed boundary
+            // Return original number if so and raise event
             if (num > 100 || num < -100)
             {
                 _outOfBounds = new EventHandler(RaiseError);
                 _outOfBounds.Invoke();
                 return ogNum;
             }
+            // Return new numbers
             else
             {
                 return num;
@@ -135,8 +144,11 @@ namespace Jadwin_Lab5
                 switch (dir)
                 {
                     case Direction.North:
+                        // Change arrow location
                         lbl.Location = new Point(lbl.Location.X, lbl.Location.Y - incAmt);
+                        // Clear old label from panel
                         pnl.Controls.Clear();
+                        // Redraw
                         pnl.Controls.Add(lbl);
                         break;
                     case Direction.South:
