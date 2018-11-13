@@ -11,7 +11,6 @@ namespace Jadwin_Lab5
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
